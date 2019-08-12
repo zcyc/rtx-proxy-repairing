@@ -1,0 +1,2 @@
+# RtxProxyRepairing
+用来设置rtx代理，因为rtx文件路径的错误，设置代理不生效，需要到c盘拷贝account文件夹，所以写个工具一键设置
