@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rtx自动修复代理工具", "rtx自动修复代理工具.csproj", "{617D3BCA-EB83-4F16-AE93-8644BBF1F609}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{617D3BCA-EB83-4F16-AE93-8644BBF1F609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617D3BCA-EB83-4F16-AE93-8644BBF1F609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617D3BCA-EB83-4F16-AE93-8644BBF1F609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617D3BCA-EB83-4F16-AE93-8644BBF1F609}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3346931A-6F7B-4353-9BF9-88BD3D71AF4E}
+	EndGlobalSection
+EndGlobal
