@@ -86,7 +86,7 @@ namespace rtx自动修复代理工具
                 string output = p.StandardOutput.ReadToEnd();
                 p.WaitForExit();//等待程序执行完退出进程
                 p.Close();
-                setproxy(RtxPath1,proxyip.Text);
+                setproxy(RtxPath1,proxyip.Text,proxyport.Text);
             }
             catch (Exception ex)
             {
@@ -103,7 +103,7 @@ namespace rtx自动修复代理工具
                 if (openFolderDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)//注意，此处一定要手动引入System.Window.Forms空间，否则你如果使用默认的DialogResult会发现没有OK属性
                 {
                     canelproxy.Content = openFolderDialog.SelectedPath + "\\Accounts";
-                    setproxy(openFolderDialog.SelectedPath+ "\\Accounts", "");
+                    setproxy(openFolderDialog.SelectedPath+ "\\Accounts", "","");
                 }    
             }
             catch (Exception ex)
@@ -113,16 +113,21 @@ namespace rtx自动修复代理工具
             }
         }
 
-        private void setproxy(String RtxPath1,String proip) {
+        private void setproxy(String RtxPath1,String proip,String proport) {
             String cfgfile = RtxPath1 + "\\rtx.cfg";
             //MessageBox.Show(cfgfile);
             Configuration config = Configuration.LoadFromFile(cfgfile);
             string ip = proip;
+            string port = proport;
             foreach (SharpConfig.Section item in config)
             {
                 if (item.Name == "ProxyConfig")
                 {
                     item["ServerAddr"].StringValue = ip.Replace(" ", "");
+                    item["ServerPort"].StringValue = port.Replace(" ", "");
+                    item["UserName"].StringValue = "";
+                    item["PassWord"].StringValue = "";
+                    item["ServerType"].StringValue = "SOCK5";
                 }
             }
             config.SaveToFile(cfgfile, Encoding.UTF8);

@@ -13,8 +13,9 @@
         <Label x:Name="lab1"  Content="点击按钮选择我的文档目录" HorizontalAlignment="Left" Margin="12,107,0,0" VerticalAlignment="Top"/>
         <Button Name="canelproxy" Content="取消" HorizontalAlignment="Left" Margin="200,137,0,0" VerticalAlignment="Top" Width="166" Click="Button_Click_1"/>
         <Label Content="请确定你要选择的我的文档下有且只有一个RTXC File List文件夹&#xA;                ※如果有多个请删除其中一个空的文件夹※" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="371" FontWeight="Bold"/>
-        <TextBox x:Name="proxyip" HorizontalAlignment="Left" Height="23" Margin="200,57,0,0" TextWrapping="Wrap" Text="111.111.111.111" VerticalAlignment="Top" Width="164"/>
-        <Label Content="你要设置的代理地址没有就默认" HorizontalAlignment="Left" Margin="12,56,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
+        <TextBox x:Name="proxyip" HorizontalAlignment="Left" Height="23" Margin="200,57,0,0" TextWrapping="Wrap" Text="1.1.1.1" VerticalAlignment="Top" Width="119"/>
+        <Label Content="你要设置的代理地址和端口" HorizontalAlignment="Left" Margin="12,56,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
         <Label x:Name="lab1_Copy"  Content="点击按钮选择RTX根目录" HorizontalAlignment="Left" Margin="200,107,-7,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="proxyport" HorizontalAlignment="Left" Height="23" Margin="324,56,0,0" TextWrapping="Wrap" Text="80" VerticalAlignment="Top" Width="58"/>
     </Grid>
 </Window>
